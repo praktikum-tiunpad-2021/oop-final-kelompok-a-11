@@ -7,11 +7,11 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 **Please create a description for this project here**
 
 ## Credits
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810200019  | Muhammad Zidan Khairan    |
-| 140810200027  | Harta Rama    |
-| 140810200037  | Azka Ghafara Putra Agung |
+| NPM           | Name                       |
+| ------------- |----------------------------|
+| 140810200019  | Muhammad Zidan Khairan     |
+| 140810200027  | Harta Rama                 |
+| 140810200037  | Azka Ghafara Putra Agung   |
 
 ## Change log
 - **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
