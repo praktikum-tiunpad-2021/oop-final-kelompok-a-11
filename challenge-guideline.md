@@ -7,9 +7,9 @@ A. Deskripsi masalah
 - Secara default akan menampilkan 4x9 (36) ubin yang telah berisi angka (tidak dimasking). 
 - Posisi ubin yang dimasking bersifat random (posisi berbeda setiap program dijalankan)
 - Dengan menggunakan args (manfaatkan argument String[] args pada method main), tambahkan argumen 'difficulty' sebagai tingkat kesulitan (banyaknya tile yang sudah berisi angka) dengan rincian:
-‘easy’ : banyak tile yang berisi angka ada 4x9 buah, (command: java Sudoku easy)
-‘medium’ : banyak tile yang berisi angka ada 2x9 buah, ( command: java Sudoku medium)
-‘hard’ : banyak tile yang berisi angka ada 1x9 buah, (command: java Sudoku hard)
+    - ‘easy’ : banyak tile yang berisi angka ada 4x9 buah, (command: java Sudoku easy)
+    - ‘medium’ : banyak tile yang berisi angka ada 2x9 buah, ( command: java Sudoku medium)
+    - ‘hard’ : banyak tile yang berisi angka ada 1x9 buah, (command: java Sudoku hard)
 - Setiap kali program berjalan akan menampilkan ubin-ubin dengan isi nomor unik (tidak ada angka yang sama pada 1 baris, 1 kolom, dan 1 sub-grids) yang teracak dari angka 1 sampai 9, kemudian terdapat beberapa ubin yang dimasking tergantung tingkat kesulitan yang dipilih.
 
 B. Setelah app berjalan
