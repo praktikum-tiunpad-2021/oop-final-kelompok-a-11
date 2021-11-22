@@ -11,14 +11,17 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 5             | n             |
 
 ## Sprint 2 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 2.1 | Preparing the x | Jane Doe | DONE |
-| 2.2 | Make the x | John Doe | FAILED |
+| 2.1 | Mengimplementasikan Algoritma Permainan Ke Dalam Java | Zidan |  |
+| 2.2 | Membuat Menu | Rama |  |
+| 2.3 | Membuat Tingkat Kesulitan Permainan | Azka |  | 
+| 2.4 | Mendesain Tampilan | Rama |  |
+| 2.5 | Membuat Beberapa Class Yang Akan Digunakan | Azka |  |
 
 ## Retrospective 
 
@@ -27,5 +30,6 @@ Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian t
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+| 3.1 | Memeriksa Error Handling | Zidan | 
+| 3.2 | Mencoba Challenge | Azka | 
+| 3.3 | Finishing | Rama | 
