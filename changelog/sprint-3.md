@@ -1,24 +1,25 @@
 # Scrum Report (Sprint 3)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 30/11/2021 to 6/12/2021
 
 ## Team (Insert your name)
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| NPM           | Name                       |
+| ------------- |----------------------------|
+| 140810200019  | Muhammad Zidan Khairan     |
+| 140810200027  | Harta Rama                 |
+| 140810200037  | Azka Ghafara Putra Agung   |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 3             | n             |
 
 ## Sprint 3 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Preparing the x | Jane Doe | DONE |
-| 3.2 | Make the x | John Doe | FAILED |
+| 3.1 | Memeriksa Error Handling | Zidan |  |
+| 3.2 | Mencoba Challenge | Azka |  |
+| 3.3 | Finishing | Rama |  |
 
 ## Retrospective 
 

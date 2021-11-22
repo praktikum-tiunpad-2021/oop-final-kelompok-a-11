@@ -1,12 +1,12 @@
 # Scrum Report (Sprint 2)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 23/11/2021 to 29/11/2021
 
 ## Team (Insert your name)
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| NPM           | Name                       |
+| ------------- |----------------------------|
+| 140810200019  | Muhammad Zidan Khairan     |
+| 140810200027  | Harta Rama                 |
+| 140810200037  | Azka Ghafara Putra Agung   |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
