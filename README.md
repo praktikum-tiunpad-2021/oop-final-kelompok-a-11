@@ -4,7 +4,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 [Challenge Guidelines](challenge-guideline.md)
 
-**Please create a description for this project here**
+Sudoku adalah game dengan tujuan untuk mengisikan angka-angka dari 1 sampai 9 ke dalam jaring-jaring 9×9 yang terdiri dari 9 kotak 3×3 tanpa ada angka yang berulang di satu baris, kolom atau kotak.
 
 ## Credits
 | NPM           | Name                       |
@@ -14,19 +14,18 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 | 140810200037  | Azka Ghafara Putra Agung   |
 
 ## Change log
-- **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
-   -  Short changes 1
-   - Short changes 2
+- **[Sprint Planning](changelog/sprint-planning.md) - (22 November 2021)** 
+   - Mendiskusikan backlog dan mencari beberapa referensi untuk merancang proyek ini.
 
-- **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
+- **[Sprint 1](changelog/sprint-1.md) - (22 November 2021)** 
    - Short changes 1
    - Short changes 2
 
-- **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
+- **[Sprint 2](changelog/sprint-2.md) - (23 November 2021 x 29 November 2021)** 
    - Short changes 1
    - Short changes 2
    
-- **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
+- **[Sprint 3](changelog/sprint-3.md) - (30 November 2021 x 6 Desember 2021)** 
    - Short changes 1
    - Short changes 2
 
