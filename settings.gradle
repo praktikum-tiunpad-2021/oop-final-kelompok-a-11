@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'oop-final-kelompok-a-11'
-
+include('app')
