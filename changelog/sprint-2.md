@@ -9,7 +9,7 @@
 | 140810200037  | Azka Ghafara Putra Agung   |
 
 ## Sprint Overview
-| Planned (n)   | Completed (n) |
+| Planned (5)   | Completed (5) |
 | ------------- |-------------- |
 | 5             | 5             |
 
