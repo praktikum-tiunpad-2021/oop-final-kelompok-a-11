@@ -32,6 +32,15 @@
 | 1.3 | Mencari Referensi Sudoku | Zidan, Rama, Azka | 
 | 1.4 | Menambahkan Challenge Guideline | Zidan, Rama, Azka | 
 
+## Sprint Backlog Plan (Sprint 2)
+| ID  | Title/Desc | Asignee | Status |
+| --- | ---------- | ------- | ------ |
+| 2.1 | Mengimplementasikan Algoritma Permainan Ke Dalam Java | Zidan |
+| 2.2 | Membuat Menu | Rama |
+| 2.3 | Membuat Tingkat Kesulitan Permainan | Azka |
+| 2.4 | Mendesain Tampilan | Rama |
+| 2.5 | Membuat Beberapa Class Yang Akan Digunakan | Azka |
+
 ## Retrospective 
 
 Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
