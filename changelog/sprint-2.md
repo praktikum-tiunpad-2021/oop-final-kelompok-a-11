@@ -11,17 +11,17 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 5             | n             |
+| 5             | 5             |
 
 ## Sprint 2 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 2.1 | Mengimplementasikan Algoritma Permainan Ke Dalam Java | Zidan |  |
-| 2.2 | Membuat Menu | Rama |  |
-| 2.3 | Membuat Tingkat Kesulitan Permainan | Azka |  | 
-| 2.4 | Mendesain Tampilan | Rama |  |
-| 2.5 | Membuat Beberapa Class Yang Akan Digunakan | Azka |  |
+| 2.1 | Mengimplementasikan Algoritma Permainan Ke Dalam Java | Zidan | DONE |
+| 2.2 | Membuat Menu | Rama | DONE |
+| 2.3 | Membuat Tingkat Kesulitan Permainan | Azka | DONE | 
+| 2.4 | Mendesain Tampilan | Rama | DONE |
+| 2.5 | Membuat Beberapa Class Yang Akan Digunakan | Azka | DONE |
 
 ## Retrospective 
 
