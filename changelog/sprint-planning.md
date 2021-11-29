@@ -33,8 +33,8 @@
 | 1.4 | Menambahkan Challenge Guideline | Zidan, Rama, Azka | 
 
 ## Sprint Backlog Plan (Sprint 2)
-| ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
+| ID  | Title/Desc | Asignee |
+| --- | ---------- | ------- |
 | 2.1 | Mengimplementasikan Algoritma Permainan Ke Dalam Java | Zidan |
 | 2.2 | Membuat Menu | Rama |
 | 2.3 | Membuat Tingkat Kesulitan Permainan | Azka |
