@@ -57,39 +57,13 @@ public class SudokuPanel extends JPanel {
 
         g2d.fillRect(0, 0, usedWidth, usedHeight);
 
-        for(int row = 0; row < puzzle.getNumRows(); row++) {
-            for(int col = 0; col < puzzle.getNumColumns(); col++) {
-                int row2 = currentlySelectedRow;
-                int col2 = currentlySelectedCol;
-                    if (puzzle.getValue(row, col) == puzzle.getValue(row2, col2) && puzzle.getValue(row, col) != ""
-                    && col != col2 && row == row2) {
-                        g2d.setColor(new Color(1.0f, 1.0f, 1.0f));
-                        g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
-                        g2d.setColor(new Color(0.0f, 0.0f, 1.0f, 0.3f));
-                        g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
-                    }
-            }
-        }
+        highlight(slotWidth, slotHeight, g2d);
         
-        for(int col = 0; col < puzzle.getNumColumns(); col++) {
-            for(int row = 0; row < puzzle.getNumRows(); row++) {
-                int row2 = currentlySelectedRow;
-                int col2 = currentlySelectedCol;
-                    if (puzzle.getValue(row, col) == puzzle.getValue(row2, col2) && puzzle.getValue(row, col) != ""
-                    && row != row2 && col == col2) {
-                        g2d.setColor(new Color(1.0f, 1.0f, 1.0f));
-                        g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
-                        g2d.setColor(new Color(0.0f, 0.0f, 1.0f, 0.3f));
-                        g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
-                    }
-            }
-        }
-
         // buat ngubah warna ubin yang diteken
         if (currentlySelectedCol != -1 && currentlySelectedRow != -1) {
             g2d.setColor(new Color(1.0f, 1.0f, 1.0f));
             g2d.fillRect(currentlySelectedCol * slotWidth, currentlySelectedRow * slotHeight, slotWidth, slotHeight);
-            g2d.setColor(Color.LIGHT_GRAY);
+            g2d.setColor(new Color(0.9f, 0.9f, 1.0f));
             g2d.fillRect(currentlySelectedCol * slotWidth, currentlySelectedRow * slotHeight, slotWidth, slotHeight);
         }
 
@@ -130,7 +104,7 @@ public class SudokuPanel extends JPanel {
                     int textHeight = (int) f.getStringBounds(puzzle.getValue(row, col), fContext).getHeight();
                     if(puzzle.isSlotMutable(row, col)) {
                         if(puzzle.getValue(row, col) == key.getValue(row, col)) {
-                            g2d.setColor(Color.GREEN);
+                            g2d.setColor(new Color(0.2f, 0.7f, 0.0f));
                         } else {
                             g2d.setColor(Color.RED);
                         }
@@ -139,6 +113,55 @@ public class SudokuPanel extends JPanel {
                     }
                     g2d.drawString(puzzle.getValue(row, col), (col * slotWidth) + ((slotWidth / 2) - (textWidth / 2)),
                             (row * slotHeight) + ((slotHeight / 2) + (textHeight / 2)));
+                }
+            }
+        }
+    }
+
+    public void highlight(int slotWidth, int slotHeight, Graphics2D g2d) {
+        int rowCheck = currentlySelectedRow;
+        int colCheck = currentlySelectedCol;
+
+        for(int row = 0; row < puzzle.getNumRows(); row++) {
+            for(int col = 0; col < puzzle.getNumColumns(); col++) {
+                if (puzzle.getValue(row, col) == puzzle.getValue(rowCheck, colCheck) && puzzle.getValue(row, col) != ""
+                && col != colCheck && row == rowCheck
+                && puzzle.getValue(rowCheck, colCheck) != key.getValue(rowCheck, colCheck)) {
+                    g2d.setColor(new Color(1.0f, 1.0f, 1.0f));
+                    g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
+                    g2d.setColor(new Color(0.7f, 0.8f, 0.9f, 0.95f));
+                    g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
+                }
+            }
+        }
+        
+        for(int col = 0; col < puzzle.getNumColumns(); col++) {
+            for(int row = 0; row < puzzle.getNumRows(); row++) {
+                if (puzzle.getValue(row, col) == puzzle.getValue(rowCheck, colCheck) && puzzle.getValue(row, col) != ""
+                && row != rowCheck && col == colCheck
+                && puzzle.getValue(rowCheck, colCheck) != key.getValue(rowCheck, colCheck)) {
+                    g2d.setColor(new Color(1.0f, 1.0f, 1.0f));
+                    g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
+                    g2d.setColor(new Color(0.7f, 0.8f, 0.9f, 0.95f));
+                    g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
+                }
+            }
+        }
+        
+        int boxRow = rowCheck / puzzle.getBoxHeight();
+        int boxCol = colCheck / puzzle.getBoxWidth();
+
+        int startingRow = (boxRow * puzzle.getBoxHeight());
+        int startingCol = (boxCol * puzzle.getBoxWidth());
+
+        for (int row = startingRow; row <= (startingRow + puzzle.getBoxHeight()) - 1; row++) {
+            for (int col = startingCol; col <= (startingCol + puzzle.getBoxWidth()) - 1; col++) {
+                if (puzzle.getValue(row, col) == puzzle.getValue(rowCheck, colCheck) && puzzle.getValue(row, col) != ""
+                && puzzle.getValue(rowCheck, colCheck) != key.getValue(rowCheck, colCheck)) {
+                    g2d.setColor(new Color(1.0f, 1.0f, 1.0f));
+                    g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
+                    g2d.setColor(new Color(0.7f, 0.8f, 0.9f, 0.95f));
+                    g2d.fillRect(col * slotWidth, row * slotHeight, slotWidth, slotHeight);
                 }
             }
         }
