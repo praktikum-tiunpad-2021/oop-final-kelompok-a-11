@@ -31,8 +31,10 @@ Sudoku adalah game dengan tujuan untuk mengisikan angka-angka dari 1 sampai 9 ke
    - Membuat Beberapa Class Yang Akan Digunakan
    
 - **[Sprint 3](changelog/sprint-3.md) - (30 November 2021 x 6 Desember 2021)** 
-   - Short changes 1
-   - Short changes 2
+   - Membuat Highlight
+   - Memeriksa Error Handling	
+   - Mencoba Challenge
+   - Finishing
 
 ## Running The App
 
