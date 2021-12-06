@@ -20,9 +20,10 @@
 | 2.3 | Membuat Tingkat Kesulitan Permainan | Azka | 
 | 2.4 | Mendesain Tampilan | Rama | 
 | 2.5 | Membuat Beberapa Class Yang Akan Digunakan | Azka | 
-| 3.1 | Memeriksa Error Handling | Zidan | 
-| 3.2 | Mencoba Challenge | Azka | 
-| 3.3 | Finishing | Rama | 
+| 3.1 | Membuat Highlight | Rama |
+| 3.2 | Memeriksa Error Handling | Zidan | 
+| 3.3 | Mencoba Challenge | Azka | 
+| 3.4 | Finishing | Rama | 
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
@@ -40,6 +41,14 @@
 | 2.3 | Membuat Tingkat Kesulitan Permainan | Azka |
 | 2.4 | Mendesain Tampilan | Rama |
 | 2.5 | Membuat Beberapa Class Yang Akan Digunakan | Azka |
+
+## Sprint Backlog Plan (Sprint 3)
+| ID  | Title/Desc | Asignee |
+| --- | ---------- | ------- |
+| 3.1 | Membuat Highlight | Rama |
+| 3.2 | Memeriksa Error Handling | Zidan | 
+| 3.3 | Mencoba Challenge | Azka | 
+| 3.4 | Finishing | Rama | 
 
 ## Retrospective 
 
