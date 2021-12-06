@@ -17,10 +17,10 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Membuat highlight | Rama |  |
-| 3.2 | Memeriksa Error Handling | Zidan |  |
-| 3.3 | Mencoba Challenge | Azka |  |
-| 3.4 | Finishing | Rama |  |
+| 3.1 | Membuat highlight | Rama | DONE |
+| 3.2 | Memeriksa Error Handling | Zidan | DONE |
+| 3.3 | Mencoba Challenge | Azka | DONE |
+| 3.4 | Finishing | Rama | DONE |
 
 ## Retrospective 
 
