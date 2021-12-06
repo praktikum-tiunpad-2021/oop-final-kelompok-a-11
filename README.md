@@ -133,4 +133,14 @@ UML image here
 
 ## Notable Assumption and Design App Details
 
-TO;DO
+- Desain Aplikasi
+   - Aplikasi didesain untuk bekerja optimal dengan tampilan windowed ataupun full screen.
+   - Tema warna default adalah putih (Light Mode).
+   - Terdapat menu File dengan pilihan { Clear, Exit }.
+   - Terdapat menu Difficulty dengan pilihan { Easy, Medium, Hard }.
+   - Difficulty Easy memiliki 36 kotak yang sudah dibuka.
+   - Difficulty Medium memiliki 18 kotak yang sudah dibuka.
+   - Difficulty Hard memiliki 9 kotak yang sudah dibuka.
+   - Aplikasi akan terbuka dengan Difficulty Easy sebagai tampilan default.
+   - Pemain dapat memasukkan angka dengan memilih kotak kosong atau kotak dengan angka yang tidak berwarna hitam dan memilih angka yang ingin dimasukkan dari tombol di bagian kanan
+   - Pemain dapat memulai permainan baru dengan memilih difficulty dari tabel baru tersebut.
