@@ -30,7 +30,7 @@ Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian t
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
 | --- | ---------- | ------- | 
-| 3.1 | Memebuat Highlight | Rama | 
+| 3.1 | Membuat Highlight | Rama | 
 | 3.2 | Memeriksa Error Handling | Zidan | 
 | 3.3 | Mencoba Challenge | Azka | 
 | 3.4 | Finishing | Rama | 
