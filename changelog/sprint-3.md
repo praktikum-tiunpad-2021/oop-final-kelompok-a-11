@@ -11,15 +11,16 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 3             | n             |
+| 4             | n             |
 
 ## Sprint 3 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 3.1 | Memeriksa Error Handling | Zidan |  |
-| 3.2 | Mencoba Challenge | Azka |  |
-| 3.3 | Finishing | Rama |  |
+| 3.1 | Membuat highlight | Rama |  |
+| 3.2 | Memeriksa Error Handling | Zidan |  |
+| 3.3 | Mencoba Challenge | Azka |  |
+| 3.4 | Finishing | Rama |  |
 
 ## Retrospective 
 
