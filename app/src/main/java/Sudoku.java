@@ -1,5 +1,3 @@
-package oop.sudoku11;
-
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -18,6 +16,7 @@ public class Sudoku extends JFrame {
 
     private JPanel buttonSelectionPanel;
     private SudokuPanel sPanel;
+    private SudokuPuzzle savePuzzle;
 
     public Sudoku(String difficulty) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,11 +38,14 @@ public class Sudoku extends JFrame {
         JMenuItem medium = new JMenuItem("Medium");
         JMenuItem hard = new JMenuItem("Hard");
 
-        //restart.addActionListener(new NewGameListener("easy"));
+        //restart.addActionListener(new NewGameListener(difficulty));
 
         easy.addActionListener(new NewGameListener("easy"));
         medium.addActionListener(new NewGameListener("medium"));
         hard.addActionListener(new NewGameListener("hard"));
+
+        clear.addActionListener(new ClearGameListener());
+        exit.addActionListener(e -> { this.dispose(); });
 
         file.add(restart);
         file.add(clear);
@@ -67,19 +69,20 @@ public class Sudoku extends JFrame {
         buttonSelectionPanel = new JPanel();
         buttonSelectionPanel.setPreferredSize(new Dimension(200, 500));
 
-        sPanel = new SudokuPanel("easy");
+        sPanel = new SudokuPanel(difficulty);
 
         windowPanel.add(sPanel);
         windowPanel.add(buttonSelectionPanel);
         this.add(windowPanel);
 
-        rebuildInterface("easy");
+        rebuildInterface(difficulty);
     }
 
     public void rebuildInterface(String difficulty) {
         SudokuGenerator object = new SudokuGenerator();
         SudokuPuzzle generatedPuzzle = object.generateRandomSudoku(difficulty);
         SudokuPuzzle generatedKey = object.getKey();
+        savePuzzle = generatedPuzzle;
         sPanel.newSudokuPuzzle(generatedPuzzle, generatedKey);
         buttonSelectionPanel.removeAll();
         for (String value : generatedPuzzle.getValidValues()) {
@@ -93,6 +96,17 @@ public class Sudoku extends JFrame {
         buttonSelectionPanel.repaint();
     }
 
+    public void clearPuzzle() {
+        for (int row = 0; row < savePuzzle.getNumRows(); row++) {
+            for (int col = 0; col < savePuzzle.getNumColumns(); col++) {
+                if (savePuzzle.isSlotMutable(row, col)) {
+                    savePuzzle.makeSlotEmpty(row, col);
+                    repaint();
+                }
+            }
+        }
+    }
+
     private class NewGameListener implements ActionListener {
 
         private String difficulty;
@@ -104,6 +118,16 @@ public class Sudoku extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             rebuildInterface(difficulty);
+        }
+    }
+
+    private class ClearGameListener implements ActionListener {
+
+        public ClearGameListener() {}
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            clearPuzzle();
         }
     }
 

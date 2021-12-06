@@ -1,5 +1,3 @@
-package oop.sudoku11;
-
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -169,8 +167,21 @@ public class SudokuPanel extends JPanel {
 
     public void messageFromNumActionListener(String buttonValue) {
         if (currentlySelectedCol != -1 && currentlySelectedRow != -1) {
-            puzzle.makeMove(currentlySelectedRow, currentlySelectedCol, buttonValue, true);
-            repaint();
+            if(puzzle.isSlotAvailable(currentlySelectedRow, currentlySelectedCol)
+            && puzzle.isSlotMutable(currentlySelectedRow, currentlySelectedCol)) {
+                puzzle.makeMove(currentlySelectedRow, currentlySelectedCol, buttonValue, true);
+                repaint();
+            } else if (!puzzle.isSlotAvailable(currentlySelectedRow, currentlySelectedCol)
+            && puzzle.isSlotMutable(currentlySelectedRow, currentlySelectedCol)
+            && buttonValue != puzzle.getValue(currentlySelectedRow, currentlySelectedCol)) {
+                puzzle.makeMove(currentlySelectedRow, currentlySelectedCol, buttonValue, true);
+                repaint();
+            } else if (!puzzle.isSlotAvailable(currentlySelectedRow, currentlySelectedCol)
+            && puzzle.isSlotMutable(currentlySelectedRow, currentlySelectedCol)
+            && buttonValue == puzzle.getValue(currentlySelectedRow, currentlySelectedCol)) {
+                puzzle.makeSlotEmpty(currentlySelectedRow, currentlySelectedCol);
+                repaint();
+            }
         }
     }
 

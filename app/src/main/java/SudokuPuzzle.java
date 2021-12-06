@@ -1,5 +1,3 @@
-package oop.sudoku11;
-
 public class SudokuPuzzle {
 
     protected String[][] board;
