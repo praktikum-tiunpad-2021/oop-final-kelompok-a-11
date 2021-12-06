@@ -27,10 +27,10 @@ public class Sudoku extends JFrame {
 
         JMenu file = new JMenu("File");
         JMenu level = new JMenu("Difficulty");
-        JMenu about = new JMenu("About");
-        JMenu help = new JMenu("Help");
+        //JMenu about = new JMenu("About");
+        //JMenu help = new JMenu("Help");
 
-        JMenuItem restart = new JMenuItem("Restart");
+        //JMenuItem restart = new JMenuItem("Restart");
         JMenuItem clear = new JMenuItem("Clear");
         JMenuItem exit = new JMenuItem("Exit");
 
@@ -47,7 +47,7 @@ public class Sudoku extends JFrame {
         clear.addActionListener(new ClearGameListener());
         exit.addActionListener(e -> { this.dispose(); });
 
-        file.add(restart);
+        //file.add(restart);
         file.add(clear);
         file.add(exit);
 
@@ -57,8 +57,8 @@ public class Sudoku extends JFrame {
         
         menuBar.add(file);
         menuBar.add(level);
-        menuBar.add(about);
-        menuBar.add(help);
+        //menuBar.add(about);
+        //menuBar.add(help);
 
         this.setJMenuBar(menuBar);
 

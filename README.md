@@ -131,7 +131,7 @@ Main file `Sudoku.java` atau Sudoku kami dapat dijalankan dengan cara :
       - **initializeBoard()** - Inisialisasi board.
       - **initializeMutableSlots()** - Inisialisasi slot yang bisa diisi.
 
-UML image here
+![UML](/images/uml.jpg "UML")
 
 ## Notable Assumption and Design App Details
 
