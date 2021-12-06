@@ -44,8 +44,6 @@ public class SudokuGenerator {
         for (int row = 0; row < puzzle.getNumRows(); row++) {
             for (int col = 0; col < puzzle.getNumColumns(); col++) {
                 key.makeMove(row, col, copy.getValue(row, col), true);
-                //System.out.println("Dari Generator");
-                //System.out.println(puzzle.getValue(row, col) + " " + key.getValue(row, col));
             }
         }
         
@@ -59,8 +57,6 @@ public class SudokuGenerator {
     public SudokuPuzzle getKey() {
         for (int row = 0; row < puzzle.getNumRows(); row++) {
             for (int col = 0; col < puzzle.getNumColumns(); col++) {
-                //System.out.println("Dari Generator getKey");
-                //System.out.println(puzzle.getValue(row, col) + " " + key.getValue(row, col));
             }
         }
         return key;
